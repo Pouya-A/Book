@@ -1,0 +1,24 @@
+@use 'custom' as *;
+@use './reset';
+@use './layout';
+
+//Components
+@use './Components/SideBar';
+@use './Components/TabItems';
+@use './Components/PortfolioImg';
+@use './Components/ModalPage';
+
+//subComponents
+@use './Components/subComponents/ProgressBar';
+@use './Components/subComponents/ModalProject';
+@use './Components/subComponents/Slider';
+@use './Components/subComponents/ErrorPage';
+@use './Components/subComponents/Loader';
+
+
+
+//Pages
+@use './Pages/Home.scss';
+@use './Pages/portfolio.scss';
+@use './Pages/About';
+@use './Pages/SinglePortfolio';

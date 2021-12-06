@@ -1,0 +1,26 @@
+@use './custom'as*;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800;900&display=swap');
+
+
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Montserrat',
+    sans-serif !important;
+    color: $secondary-color;
+    scroll-behavior: smooth;
+   
+   
+    
+}
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}

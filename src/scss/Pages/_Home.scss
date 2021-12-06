@@ -1,0 +1,49 @@
+@use '../custom'as *;
+
+.home{
+   padding:8.5em 2em !important;
+
+   &-img-content{
+     
+     max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+   svg{
+     width: 100%;
+     max-width: 500px;
+      height: auto;
+
+     
+   }
+    
+     
+     
+    
+   }
+
+   &-info-content{
+      padding-top: 1.5em !important;
+
+      @include media-breakpoint-down(lg){
+         padding-top: 1em !important;
+      }
+      &-info{
+
+        
+
+h1 {
+   font-size: 3.125rem;
+   font-weight: 700;
+   
+}
+p{
+   font-size: .9rem;
+   font-weight: 600;
+   
+ 
+}
+      }
+      
+   }
+}

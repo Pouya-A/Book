@@ -1,0 +1,23 @@
+@use '../../custom' as *;
+
+.modal-content-project{
+
+
+    &-box{
+     
+        @include glasslayer2;
+        border-radius: 25px;
+        
+        h5{
+            font-weight: 600;
+            color: $third-color;
+            
+
+        }
+        p{
+           
+            font-style: italic;
+            font-weight: 500;
+        }
+    }
+}

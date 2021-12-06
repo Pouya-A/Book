@@ -1,0 +1,60 @@
+@use '../../custom'as*;
+@import "../../../../node_modules/react-alice-carousel/lib/scss/alice-carousel.scss";
+
+
+
+
+
+.slider{
+    margin-bottom: 3rem !important;
+
+    &-box{
+        height: 110px;
+        max-width: 100%;
+        background-color: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2em !important;
+        padding-top: 2em !important;
+        padding-bottom: 2em !important;
+
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+.alice-carousel{
+position: relative;
+&__wrapper{
+    position: absolute;
+  
+}
+.alice-carousel__next-btn{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    position: absolute;
+    top: 30% !important;
+    right: 0 !important; 
+  
+
+}
+
+.alice-carousel__prev-btn{
+    color: $black !important;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    position: absolute;
+    top: 30% !important;
+    left: 0 !important;
+}
+
+&__dots{
+    display: none !important;
+}
+}
+

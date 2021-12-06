@@ -1,0 +1,70 @@
+@use '../custom'as *;
+
+
+.single{
+    padding: 7rem 8rem 9rem 8rem!important;
+@include media-breakpoint-down(xl) {
+    padding: 12rem 8rem !important;
+}
+    &-content{
+  
+    border-radius: 30px;
+    position: relative;
+    max-width: 800px;
+   
+
+    // @include glasslayer;
+        &-img{
+        width: 100%;
+            
+             display: flex;
+             justify-content: center;
+              
+            margin-bottom: 4rem !important;
+              background-color: transparent;
+        
+              img{  
+                 border-radius: 30px;
+                   height: 200px;
+                   width:200px;
+                  object-fit: cover;
+              }
+
+        }
+        &-info{
+            display: grid;
+            display: -ms-grid;
+            grid-template-columns: repeat(2,1fr);
+            -ms-grid-columns:repeat(2, 1fr);
+            gap: 4rem;
+            margin-bottom: 3rem !important;
+            &-det{
+                @include glasslayer2;
+                border-radius: 30px;
+                padding: 3rem 2rem !important;
+                label{
+                    color: $third-color;
+                    margin-bottom: 0.25rem !important;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+             display: grid;
+             display: -ms-grid;
+             grid-template-columns: 1fr;
+             -ms-grid-columns:1fr;
+            }
+        }
+
+        .desc-container{
+              @include glasslayer2;
+              border-radius: 30px;
+              padding: 3rem 2rem !important;
+              text-align: justify;
+            label{
+                color: $third-color;
+                margin-bottom: 0.25rem !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@use '../../custom' as *;
+.progress-container {
+    padding-right: 6em !important;
+    .progress-info{
+        color: $black;
+        font-size: .9rem;
+        font-style: italic;
+    }
+
+    .progress-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .progress {
+        height: .2rem !important;
+        background-color: $primary-color !important;
+
+        .progress-bar {
+            background-color: $third-color !important;
+           
+        }
+    }
+
+}

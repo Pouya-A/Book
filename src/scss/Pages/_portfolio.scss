@@ -1,0 +1,39 @@
+@use '../custom'as *;
+
+.portfolio{
+    padding-top: 7em !important;
+    padding-left: 3.5em !important;
+    padding-right: 3.5em !important;
+    color: $white;
+
+    &-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 105px;
+        height: 40px;
+       
+        background-color: $primary-color;
+        margin-bottom: 1em !important;
+
+        h6 {
+            font-size: .9rem;
+            font-weight: 700;
+
+        }
+    }
+
+    &-title{
+        
+       
+        
+        &-info{
+           
+            font-size: 2.125rem;
+            font-weight: 700;
+
+        }
+    }
+
+    
+}

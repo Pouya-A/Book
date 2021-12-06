@@ -1,0 +1,83 @@
+@use '../custom'as *;
+.about{
+    padding: 5em 3em !important;
+    width: 100% !important;
+    height: 100%;
+    color: $black;
+    &-img{
+       
+
+        img{
+            width: 100%;
+        }
+       
+    }
+    .title{
+        h6{
+            font-size: 1.325rem;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+    &-content{
+        padding-right:  1.5em !important;
+        p{
+            font-size: .9rem;
+            text-align: justify !important;
+            
+        }
+
+        .bookbtn{
+            color: $third-color;
+            position: relative;
+            background: linear-gradient(to left, $primary-color 50%, $third-color 50%) right;
+            background-size: 500%;
+              transition: 0.6s ease-out;
+              margin-top: 2rem !important;
+
+            &:hover{
+                background-position:left;
+                color:$secondary-color;
+            }
+        }
+    }
+
+    &-info{
+        font-size: .9rem;
+        min-width: 100%;
+
+       &-title{
+            padding-left: 6em !important;
+            @include media-breakpoint-down(xl){
+                padding-left: 0!important;
+            }
+            p{
+                margin-bottom: 1em !important;
+            }
+        }
+        &-value{
+            color: $black;
+            p{
+                 margin-bottom: 1em !important;
+                 &:nth-child(4) {
+                     cursor: pointer;
+                     transition: .4s ease;
+                    &:hover {
+                        @include fontTransition;
+                    }
+                 }
+                 &:nth-child(5) {
+                     cursor: pointer;
+                      transition: .4s ease;
+                     &:hover{
+                            @include fontTransition;
+                     }
+                    
+                 }
+            }
+            
+            
+
+        }
+    }
+}
